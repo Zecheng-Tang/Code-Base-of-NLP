@@ -8,5 +8,6 @@ def bleu(refs, cands):
         result["bleu-%d"%i] = "%.4f"%(nltk.translate.bleu_score.corpus_bleu([[r] for r in refs], cands, weights=tuple([1./i for j in range(i)])))
     return result
 
-def main():
-    re
+tokenizer = WordPunctTokenizer()
+
+golden_text = 
