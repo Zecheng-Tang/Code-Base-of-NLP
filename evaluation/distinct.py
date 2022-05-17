@@ -16,7 +16,6 @@ def distinct(cands):
         result["distinct-%d"%i] = "%.4f"%(len(all_ngram) / float(all_ngram_num))
     return result
 
-
 tokenizer=WordPunctTokenizer()
 cand = None
 cand_token=  [tokenizer.tokenize(c) for c in cand]
